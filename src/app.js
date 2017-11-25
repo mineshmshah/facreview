@@ -99,7 +99,7 @@ app.post('/login',
         { successRedirect: '/current-week', failureRedirect: '/', failureFlash: true },
     ));
 
-// User needs to be de/serialized to cooke, this can be used to pull ID for person currently in session
+// User needs to be deserialized to cooke, this can be used to pull ID for person currently in session
 passport.serializeUser((userObj, done) => {
   console.log('userobj', userObj);
   done(null, userObj.id);

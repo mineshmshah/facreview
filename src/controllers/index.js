@@ -7,7 +7,6 @@ const LocalStrategy = require('passport-local').Strategy;
 
 const home = require('./home');
 const currentWeek = require('./current-week');
-
 const logout = require('./logout');
 const signup = require('./signup');
 const register = require('./register');
